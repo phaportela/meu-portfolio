@@ -8,10 +8,22 @@ type ProjectProps = {
 
 export default function ProjectCard({ title, description, link }: ProjectProps) {
   return (
-    <div className="border rounded-lg p-4 bg-white shadow-md hover:shadow-lg transition">
-      <h3 className="text-xl font-bold mb-2">{title}</h3>
-      <p className="text-gray-700 mb-4">{description}</p>
-      <Link href={link} className="text-blue-600 hover:underline">
+    <div
+      className="
+        border rounded-lg p-6
+        bg-blue-900
+        shadow-md hover:shadow-xl transition
+        text-white
+        hover:bg-gradient-to-r hover:from-blue-700 hover:via-indigo-800 hover:to-purple-800
+        duration-500
+      "
+    >
+      <h3 className="text-2xl font-bold mb-3">{title}</h3>
+      <p className="mb-6 text-blue-300">{description}</p>
+      <Link 
+        href={link} 
+        className="inline-block text-indigo-300 font-semibold hover:text-white underline transition"
+      >
         Ver projeto →
       </Link>
     </div>
