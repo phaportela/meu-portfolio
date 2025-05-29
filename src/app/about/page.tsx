@@ -14,7 +14,7 @@ export default function About() {
     <div className="p-6 max-w-3xl mx-auto">
       <h1 className="text-3xl font-bold mb-4">Sobre Mim</h1>
       <p className="text-lg text-gray-700 leading-relaxed">
-        Olá! Me chamo Pedro Portela, tenho 19 anos e sou um entusiasta da programação.
+        Olá! Me chamo Pedro Portela, tenho 20 anos e sou um entusiasta da programação.
         Atualmente estou estudando desenvolvimento front-end e criando projetos usando HTML, CSS, JS e agora estou aprendendo Next.js.
         Estou sempre buscando melhorar minhas habilidades e transformar ideias em sites funcionais e bonitos.
       </p>
