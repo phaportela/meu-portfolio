@@ -3,7 +3,8 @@
 import Link from 'next/link';
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Menu, X } from 'lucide-react'; // ícones bonitos
+import { Menu, X } from 'lucide-react';
+import Image from 'next/image';
 
 export default function Nav() {
   const [isOpen, setIsOpen] = useState(false);
@@ -17,11 +18,19 @@ export default function Nav() {
 
   return (
     <nav className="bg-gray-900 text-white px-6 py-4 flex items-center justify-between">
-      <Link href="/" className="text-xl font-bold">
-        Portfolio
+      {/* Logo substituindo o texto */}
+      <Link href="/" className="flex items-center">
+        <Image
+          src="/logo.png" // Caminho da sua imagem na pasta /public
+          alt="Logo"
+          width={40}
+          height={40}
+          className="hover:opacity-80 transition-opacity"
+          priority
+        />
       </Link>
 
-      {/* Botão hamburguer visível só em telas pequenas */}
+      {/* Botão hamburguer para telas pequenas */}
       <button
         className="md:hidden"
         onClick={() => setIsOpen(!isOpen)}
@@ -41,7 +50,7 @@ export default function Nav() {
         ))}
       </ul>
 
-      {/* Menu mobile animado */}
+      {/* Menu mobile com animação */}
       <AnimatePresence>
         {isOpen && (
           <motion.ul
@@ -56,7 +65,7 @@ export default function Nav() {
                 <Link
                   href={link.href}
                   className="block py-2 hover:text-gray-300"
-                  onClick={() => setIsOpen(false)} // Fecha o menu ao clicar
+                  onClick={() => setIsOpen(false)}
                 >
                   {link.label}
                 </Link>

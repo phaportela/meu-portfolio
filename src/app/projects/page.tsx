@@ -2,18 +2,18 @@ import ProjectCard from "@/components/ProjectCard";
 
 const projects = [
   {
-    title: "Landing Page Responsiva",
-    description: "Uma landing page simples feita com HTML, CSS e JS puro.",
+    title: "Em breve",
+    description: "Em breve",
     link: "https://github.com/seu-usuario/landing-page",
   },
   {
-    title: "Clone do YouTube",
-    description: "Clone da interface do YouTube usando Tailwind CSS.",
+    title: "Em breve",
+    description: "Em breve",
     link: "https://github.com/seu-usuario/youtube-clone",
   },
   {
-    title: "Jogo da Velha",
-    description: "Feito em JavaScript puro. Simples e divertido!",
+    title: "Em breve",
+    description: "Em breve",
     link: "https://github.com/seu-usuario/jogo-da-velha",
   },
 ];
