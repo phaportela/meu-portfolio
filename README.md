@@ -44,10 +44,14 @@ Bem-vindo(a) ao meu portfólio de desenvolvedor! Este projeto foi criado com **N
 ```bash
 # Clone o repositório
 git clone https://github.com/phaportela/meu-portfolio.git
-cd seu-repo
+cd meu-portfolio
 
 # Instale as dependências
 npm install
 
 # Rode em ambiente de desenvolvimento
 npm run dev
+
+## Licença
+
+Este projeto está licenciado sob a [MIT License](LICENSE).
