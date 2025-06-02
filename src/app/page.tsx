@@ -13,10 +13,10 @@ export default function Home() {
       transition={{ duration: 0.6 }}
     >
       <Image
-        src="/perfil.jpg"
+        src="/Perfil.jpg"
         alt="Foto de Pedro Portela"
-        width={120}
-        height={120}
+        width={200}
+        height={200}
         className="rounded-full border-4 border-blue-600 shadow-lg mb-6"
       />
 
